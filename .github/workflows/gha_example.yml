@@ -22,7 +22,7 @@ jobs:
         
       # Instalacja QEMU
       - name: Docker Setup QEMU
-        uses: docker/setup-quemu-action@v2
+        uses: docker/setup-qemu-action@v2
 
       # Logowanie do Dockerhub-a
       - name: Login to DockerHub

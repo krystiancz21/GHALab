@@ -13,18 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v3
 
       # Instalacja środowiska Docker + Buildx
       - name: Buildx set-up
-        uses: #########################
+        uses: docker/setup-buildx-action@v2
         
       # Instalacja QEMU
       - name: Docker Setup QEMU
-        uses: ##########################
+        uses: docker/setup-quemu-action@v2
 
       # Logowanie do Dockerhub-a
       - name: Login to DockerHub
-        uses: #############################
+        uses: docker/login-action@v2
         with:
           username: ${{secrets.DOCKERHUB_USERNAME}}
           password: ${{secrets.DOCKERHUB_TOKEN}}
@@ -35,9 +37,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           platforms: linux/arm64/v8,linux/amd64 
-          context: #############################
-          file: ################################
-          push: ################################
+          context: .
+          file: ./Dockerfile_prod
+          push: true
           tags: |
-            ##################################### 
+            s95382/ghlab10example
       

@@ -33,3 +33,7 @@ Przebieg zadania:
 
 3. Efekt wykonania workflow (L10ss2)
 ![image](https://github.com/krystiancz21/GHALab/blob/486d0e95f46b3fcb8e891d37a490a67ff6187a8d/L10ss2.png)
+
+4. Obrazy z lab na DockerHub:
+   * https://hub.docker.com/r/s95382/ghlab10example/tags
+   * https://hub.docker.com/r/s95382/lab/tags

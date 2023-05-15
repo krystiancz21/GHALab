@@ -6,6 +6,7 @@ Przebieg zadania:
 1. Uzupełnienie pliku: gha_example.yml
 
 2. Dodanie zmian do repo i uruchomienie workflow (screen: L10ss1):
+![image](https://github.com/krystiancz21/GHALab/blob/486d0e95f46b3fcb8e891d37a490a67ff6187a8d/L10ss1.png)
     * Wykonanie commita:
         ```
         git add . && git commit -m "GA test run 2 - example"
@@ -31,3 +32,4 @@ Przebieg zadania:
         ```
 
 3. Efekt wykonania workflow (L10ss2)
+![image](https://github.com/krystiancz21/GHALab/blob/486d0e95f46b3fcb8e891d37a490a67ff6187a8d/L10ss2.png)
